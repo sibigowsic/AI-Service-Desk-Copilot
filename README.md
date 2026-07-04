@@ -4,15 +4,31 @@
 
 ### AI-Powered IT Service Management using ServiceNow AI Agent Studio
 
-An intelligent Service Desk assistant that automates the IT incident lifecycle through natural language conversations using ServiceNow AI Agent Studio, AI Search, Now Assist, and JavaScript.
+<p align="center">
+
+![ServiceNow](https://img.shields.io/badge/ServiceNow-Platform-81B5A1?style=for-the-badge&logo=servicenow)
+![AI Agent Studio](https://img.shields.io/badge/AI-Agent%20Studio-blue?style=for-the-badge)
+![Now Assist](https://img.shields.io/badge/Now-Assist-success?style=for-the-badge)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?style=for-the-badge&logo=javascript)
+![ITSM](https://img.shields.io/badge/ITSM-Workflow-orange?style=for-the-badge)
+
+</p>
 
 ---
 
-![ServiceNow](https://img.shields.io/badge/Platform-ServiceNow-81B5A1?style=for-the-badge)
-![AI Agent Studio](https://img.shields.io/badge/AI-Agent%20Studio-blue?style=for-the-badge)
-![Now Assist](https://img.shields.io/badge/Now-Assist-success?style=for-the-badge)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?style=for-the-badge)
-![ITSM](https://img.shields.io/badge/Domain-ITSM-orange?style=for-the-badge)
+### 🚀 Intelligent AI Assistant for Enterprise IT Support
+
+*Built using ServiceNow AI Agent Studio, AI Search Retrieval, Now Assist, GlideRecord and JavaScript.*
+
+<p>
+
+⭐ AI Search &nbsp;&nbsp;
+⭐ Incident Management &nbsp;&nbsp;
+⭐ Knowledge Base &nbsp;&nbsp;
+⭐ Natural Language &nbsp;&nbsp;
+⭐ ITSM Automation
+
+</p>
 
 </div>
 
@@ -20,150 +36,96 @@ An intelligent Service Desk assistant that automates the IT incident lifecycle t
 
 # 📌 Overview
 
-Organizations receive hundreds of IT support requests every day. Users often struggle to find solutions, create support tickets, track progress, and communicate updates efficiently.
+AI Service Desk Copilot is an intelligent IT support assistant that automates the complete ServiceNow incident lifecycle through natural language conversations.
 
-This project demonstrates an **AI-powered Service Desk Copilot** built with **ServiceNow AI Agent Studio** that enables users to interact with IT support using natural language.
+Instead of navigating multiple ServiceNow forms, users simply describe their problem. The AI Agent determines the user's intent and invokes the appropriate ServiceNow capability.
 
-Instead of navigating multiple ServiceNow modules, users can simply describe their issue, and the AI agent intelligently performs the appropriate action.
-
----
-
-# 🎯 Problem Statement
-
-Traditional IT support workflows involve multiple manual steps:
-
-- Searching documentation
-- Creating incidents manually
-- Tracking incident progress
-- Updating work notes
-- Closing resolved incidents
-
-These repetitive tasks increase response time and reduce productivity.
+The assistant can search the Knowledge Base, create incidents, retrieve incident information, update work notes, and close incidents while interacting directly with the ServiceNow platform.
 
 ---
 
-# 💡 Solution
+# ✨ Key Features
 
-The AI Service Desk Copilot automates the complete incident lifecycle.
-
-Instead of filling forms manually, users interact naturally with an AI assistant.
-
-The assistant can:
-
-- Search the Knowledge Base
-- Create Incidents
-- Retrieve Incident Status
-- Update Work Notes
-- Close Incidents
+| Capability | Description |
+|------------|-------------|
+| 🔍 AI Knowledge Search | Searches the ServiceNow Knowledge Base using AI Search Retrieval |
+| 📝 Incident Creation | Creates ServiceNow incidents using natural language |
+| 📊 Incident Status | Retrieves incident information in real time |
+| 🛠 Incident Updates | Adds work notes to existing incidents |
+| ✅ Incident Closure | Closes incidents after successful resolution |
+| 🤖 AI Orchestration | Coordinates multiple AI tools using AI Agent Studio |
 
 ---
 
-# ✨ Features
-
-| Feature | Description |
-|----------|-------------|
-| 🔍 Knowledge Search | Searches ServiceNow Knowledge Base using AI Search Retrieval |
-| 📝 Create Incident | Creates incidents from natural language requests |
-| 📊 Get Incident Status | Retrieves live incident details |
-| 🛠 Update Incident | Adds work notes to existing incidents |
-| ✅ Close Incident | Closes incidents with resolution notes |
-| 🤖 AI Orchestration | Coordinates specialized tools through AI Agent Studio |
-
----
-
-# 🏗️ System Architecture
+# 🏗 System Architecture
 
 ```text
-                        User
-                          │
-                          ▼
-               AI Service Desk Copilot
-                          │
-                 Service Desk Agent
-                          │
-        ┌─────────────────┼─────────────────┐
-        │                 │                 │
-        ▼                 ▼                 ▼
- Knowledge Search   Incident Tools   AI Responses
-                          │
-      ┌──────────┬────────┼────────┬─────────┐
-      ▼          ▼        ▼        ▼
-  Create      Status    Update    Close
- Incident    Retrieval  Incident  Incident
-                          │
-                          ▼
-                 ServiceNow Platform
+                                    User
+                                      │
+                                      ▼
+                    ┌─────────────────────────────────┐
+                    │     AI Service Desk Copilot     │
+                    └─────────────────────────────────┘
+                                      │
+                                      ▼
+                    ┌─────────────────────────────────┐
+                    │       Service Desk Agent        │
+                    └─────────────────────────────────┘
+                                      │
+        ┌───────────────┬─────────────┼─────────────┬──────────────┐
+        ▼               ▼             ▼             ▼              ▼
+
+ Knowledge Search   Create Incident  Get Status  Update Incident  Close Incident
+
+        │               │             │             │              │
+        └───────────────┴─────────────┴─────────────┴──────────────┘
+                                      │
+                                      ▼
+                          ServiceNow ITSM Platform
 ```
 
 ---
 
-# 🔄 Workflow
+# 🔄 AI Workflow
 
 ```text
-User reports an issue
-          │
-          ▼
-Search Knowledge Base
-          │
-   ┌──────┴──────┐
-   │             │
-Article Found    No Article
-   │             │
-Provide Fix   Create Incident
-                    │
-                    ▼
-          Get Incident Status
-                    │
-                    ▼
-          Update Work Notes
-                    │
-                    ▼
-            Close Incident
+                         User Reports an Issue
+                                   │
+                                   ▼
+                    Search ServiceNow Knowledge Base
+                                   │
+                    ┌──────────────┴──────────────┐
+                    │                             │
+                    ▼                             ▼
+           Relevant Article Found           No Article Found
+                    │                             │
+                    ▼                             ▼
+         Summarize Solution              Create Incident
+                                                  │
+                                                  ▼
+                                        Retrieve Incident Status
+                                                  │
+                                                  ▼
+                                           Update Work Notes
+                                                  │
+                                                  ▼
+                                            Close Incident
 ```
 
 ---
 
-# 🛠️ Technology Stack
+# 🛠 Tech Stack
 
 | Technology | Purpose |
 |------------|---------|
 | ServiceNow | Enterprise ITSM Platform |
 | AI Agent Studio | AI Agent Orchestration |
-| Now Assist | Conversational AI Interface |
-| AI Search Retrieval | Knowledge Base Search |
-| JavaScript | Script Tools |
-| GlideRecord | Record Operations |
-| Knowledge Base | Self-Service Support |
-
----
-
-# 📸 Screenshots
-
-> Add screenshots inside the **Screenshots/** folder.
-
-Suggested screenshots:
-
-- AI Agent Studio Overview
-- Knowledge Search
-- Create Incident
-- Incident Status
-- Update Incident
-- Close Incident
-- ServiceNow Incident Record
-
----
-
-# 🎥 Demo
-
-A complete demonstration of the workflow is available in the **Demo/** folder.
-
-The demonstration covers:
-
-- Knowledge Search
-- Incident Creation
-- Status Retrieval
-- Incident Update
-- Incident Closure
+| Now Assist | Conversational AI |
+| AI Search Retrieval | Knowledge Search (RAG) |
+| JavaScript | Backend Script Tools |
+| GlideRecord | Database Operations |
+| Incident Management | ITSM |
+| Knowledge Management | Enterprise Self-Service |
 
 ---
 
@@ -173,36 +135,106 @@ The demonstration covers:
 AI-Service-Desk-Copilot
 │
 ├── README.md
+├── LICENSE
+├── .gitignore
+│
 ├── Demo
+│   └── AI_Service_Desk_Copilot_Demo.mp4
+│
 ├── Documentation
+│   ├── AI-Agent.md
+│   ├── Architecture.md
+│   └── Workflow.md
+│
 ├── Scripts
+│   ├── CreateIncident.js
+│   ├── GetIncidentStatus.js
+│   ├── UpdateIncident.js
+│   └── CloseIncident.js
+│
 └── Screenshots
+    ├── 01-Agent-Studio.png
+    ├── 02-Knowledge-Search.png
+    ├── 03-Create-Incident.png
+    ├── 04-Incident-Status.png
+    ├── 05-Update-Incident.png
+    ├── 06-Close-Incident.png
+    └── 07-ServiceNow-Incident.png
 ```
 
 ---
 
-# 📈 Skills Demonstrated
+# 🎥 Demonstration
 
-- ServiceNow AI Agent Studio
-- AI Workflow Design
-- Prompt Engineering
-- IT Service Management (ITSM)
-- AI Search Retrieval (RAG)
-- JavaScript
-- GlideRecord
-- Knowledge Management
-- AI Tool Orchestration
+The complete demonstration showcases the following workflow:
+
+- 🔍 Search Knowledge Base
+- 📝 Create Incident
+- 📊 Retrieve Incident Status
+- 🛠 Update Incident Work Notes
+- ✅ Close Incident
+
+Demo Video
+
+```text
+Demo/AI_Service_Desk_Copilot_Demo.mp4
+```
 
 ---
 
-# 🔮 Future Enhancements
+# 📸 Screenshots
+
+| Module | Screenshot |
+|----------|------------|
+| AI Agent Studio | `Screenshots/01-Agent-Studio.png` |
+| Knowledge Search | `Screenshots/02-Knowledge-Search.png` |
+| Create Incident | `Screenshots/03-Create-Incident.png` |
+| Incident Status | `Screenshots/04-Incident-Status.png` |
+| Update Incident | `Screenshots/05-Update-Incident.png` |
+| Close Incident | `Screenshots/06-Close-Incident.png` |
+| ServiceNow Record | `Screenshots/07-ServiceNow-Incident.png` |
+
+---
+
+# 🧠 AI Capabilities
+
+✔ Intent Detection
+
+✔ AI Search Retrieval
+
+✔ Natural Language Understanding
+
+✔ Tool Invocation
+
+✔ Incident Lifecycle Automation
+
+✔ Knowledge Base Retrieval
+
+✔ AI Orchestration
+
+✔ ServiceNow Integration
+
+---
+
+# 📈 Business Value
+
+- Improves IT support efficiency
+- Reduces repetitive manual operations
+- Encourages self-service through Knowledge Articles
+- Automates repetitive Service Desk workflows
+- Demonstrates practical enterprise AI implementation
+
+---
+
+# 🚀 Future Enhancements
 
 - Intelligent Incident Routing
-- Automatic Assignment Recommendations
-- Priority Prediction
-- SLA Monitoring
+- Priority Recommendation
+- SLA Prediction
 - Multi-Agent Collaboration
+- Automatic Assignment
 - Analytics Dashboard
+- Email Notification Integration
 
 ---
 
@@ -214,10 +246,16 @@ B.Tech Artificial Intelligence & Data Science
 
 Sri Krishna College of Engineering and Technology
 
+GitHub: *(Add your GitHub Profile)*
+
+LinkedIn: *(Add your LinkedIn Profile)*
+
 ---
 
-# ⭐ Acknowledgements
+<div align="center">
 
-Built as a hands-on learning project to explore ServiceNow AI Agent Studio and modern AI-powered IT Service Management workflows.
+### ⭐ If you found this project interesting, consider giving it a Star.
 
-If you found this project interesting, consider giving it a ⭐ on GitHub.
+Made with ❤️ using **ServiceNow AI Agent Studio**
+
+</div>
