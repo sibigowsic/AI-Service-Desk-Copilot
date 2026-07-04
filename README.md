@@ -240,16 +240,7 @@ Demo/AI_Service_Desk_Copilot_Demo.mp4
 
 # 👨‍💻 Author
 
-**Sibi**
-
-B.Tech Artificial Intelligence & Data Science
-
-Sri Krishna College of Engineering and Technology
-
-GitHub: *(Add your GitHub Profile)*
-
-LinkedIn: *(Add your LinkedIn Profile)*
-
+GOWSIC SIBI 
 ---
 
 <div align="center">
